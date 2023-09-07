@@ -1,0 +1,64 @@
+
+body{
+    background-image: url("assets/main.jpg");
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0%;
+    background-size: contain;
+}
+
+
+h1{
+    color: white;
+    font-size: 100px;
+    text-align: center;
+    width: 150vmin;
+    position: relative;
+    
+}
+
+/* .sad{
+    margin-left: 50%;
+    margin-top: -18%;
+    width: 400px;
+    height: 400px;
+    position:fixed;
+} */
+
+.happy{
+    position: relative;
+    width: 300px;
+}
+.restart{
+    padding-left: 30%;
+    margin-top: -250px;
+
+} 
+
+@media (max-width:400px){
+    h1 {
+        font-size:large;
+        align-items: center;
+
+
+    }
+    .happy{
+        width: 20vmax;
+        height: 20vmax;
+        
+        
+    }
+    .sad{
+        width: 10vmax;
+        height: 10vmax;
+        resize: both;
+        margin: 0 ;
+    }
+    .restart{
+        width: 10vmax;
+        height: 10vmax;
+        /* resize: both; */
+        /* margin: 0px 50px 100px 0px; */
+    }
+}
