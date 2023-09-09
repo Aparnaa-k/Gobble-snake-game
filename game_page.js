@@ -196,7 +196,7 @@ function checkGameOver(){
 }
 
 function backToHome(){
-    window.location = 'home.html'
+    window.location = 'index.html'
 }
 
 
