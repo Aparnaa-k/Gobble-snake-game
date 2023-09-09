@@ -8,34 +8,44 @@
 </head>
 <body>
     <div class="display">
+        <button id="back" onclick="backToHome()"><img src="assets/Thick Arrow Pointing Down.png"></button>
         <h1>Instructions:</h1>
         <p>
         1) Starting Position: The game begins with the snake located in the center square of the play field, and an egg appears
         randomly in one of the other squares.
-        <br>
+        <br><br>
         2) Controls: Use the arrow keys (up, down, left, and right) or on-screen touch controls to move the snake in the
         corresponding direction.
-        <br>
+        <br><br>
         3) Collecting Eggs: Guide the snake to move over the eggs to collect them. Each egg consumed makes the snake grow longer.
         Movement: The snake can only move to adjacent squares in the grid (up, down, left, and right). Plan your moves carefully
         to avoid obstacles and self-collision.
-        <br>
+        <br><br>
         4) Obstacles: Watch out for obstacles or barriers that may appear in the grid as you progress through the game. Colliding
         with obstacles or the boundaries of the grid ends the game.
-        <br>
+        <br><br>
         5) Scoring: Your score increases with each egg consumed. You can also set a target score for players to reach to win the
         game.
-        <br>
+        <br><br>
         6) Winning: To win the game, either reach the specified target score or guide the snake to a certain length by eating a
         specific number of eggs.
-        <br>
+        <br><br>
         7) Losing: The game ends if the snake collides with an obstacle, runs into the grid's boundaries, or reaches a
         predetermined losing condition (e.g., hitting a specific length without reaching the target).
-        <br>
+        <br><br>
         8)Restart/Quit: Players can restart the current level or choose to quit and return to the main menu as needed.
         High Score: Keep track of players' high scores so they can compete for the best score.
         </p>
-        <button>Continue</button>
+        <button id="continue">Continue</button>
     </div>
+    <script>
+        let continueBtn = document.getElementById('continue')
+            continueBtn.onclick = () => {
+                window.location = 'game_page.html'
+            }
+        function backToHome(){
+            window.location = 'home.html'
+        }
+    </script>
 </body>
 </html>

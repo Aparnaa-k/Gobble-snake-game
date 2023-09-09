@@ -5,28 +5,48 @@
 
 body{
     background-image: url("assets/main.jpg");
+
     height: 100vh;
     width: 100vw;
     background-size: contain;
+}
+#back{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    margin-top: 10px;
+    background-color:rgb(255, 213, 26);
+    border-radius: 15px;
+    cursor: pointer;
+    border: none;
+
+}
+#back > img{
+    transform: rotate(90deg);
+    width: 45px;
+    align-items: center;
 }
 
 #cover{
     display: flex;
     justify-content: space-around;
+    padding: 1%;
+}
+p{
+    color: #ffffff;
+    font-size: 28px;
+    text-align: center;
+    font-weight: 800;
 }
 
-.content{
-    background-color:rgb(255, 213, 26) ;
-    width: 90vmin;
-    height: 90vmin;
-    display: grid;
-    grid-template-rows: repeat(20, 1fr);
-    grid-template-columns:repeat(20, 1fr) ;
+.gameBoard{ 
     border: 3px solid black;
 }
 
 h1{
     font-weight: 900;
+    padding: 2%;
 }
 
 h1 ,h2{
@@ -51,7 +71,7 @@ h2{
     border-radius: 50%;
 }
 
-div.scoreboard{
+div.scoreBoard{
     height: 80vmin;
     width:70vmin;
     background-color: rgb(0, 0, 0, 0.9);
@@ -61,7 +81,7 @@ div.scoreboard{
     align-items: center;
 }
 
-div.scoreholder{
+div.scoreHolder{
     display: flex;
     justify-content: space-around;
     flex-direction: row;
@@ -82,7 +102,7 @@ h2.score{
     color: black;
 }
 
-.play{
+div.play{
     display: flex;
     justify-content: space-between;
     width: 20vw;
@@ -91,11 +111,17 @@ h2.score{
 div.pause{
     background-color: rgb(255, 213, 26);
     width: 80px;
-    height: 75px;
+    height: 65px;
     display: flex;
     justify-content: center;
     border-radius: 10px;
+    cursor: pointer;
     
+}
+#speaker{
+    width: 80px;
+    height: 65px;
+    cursor: pointer;
 }
 
 .keys_up {
@@ -104,6 +130,7 @@ div.pause{
     height: 50px;
     border: 2px solid black;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .keys_down {
@@ -115,6 +142,7 @@ div.pause{
     align-items: center;
     border: 2px solid black;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .arrow{
@@ -145,23 +173,53 @@ div.pause{
     transform: rotate(270deg);
 }
 
-@media (max-width:400px) {
+@media (max-width:500px) {
     h1{
-        font-size:small;
+        font-size:large;
 
     }
     h2{
         font-size: small;
+        margin: 5%;
     }
-    .score{
-        width: 10vmin;
-        height: 10vmin;
-
-    }
-    .scoreboard{
+    div.score{
         width: auto;
         height: auto;
+
+    }
+    .gameBoard{
+        margin: 0% 5% 5%;
+    }
+    .scoreHolder{
+        margin-top: 1%;
+    }
+    .scoreBoard{
+        width: 70% ; 
+        height: auto ;
+        margin: auto;
+        justify-content: space-between;
         flex-direction: column;
+    }
+    #back{
+        width: 8vmin;
+        height: 8vmin;
+    }
+    #back > img{
+        width: 8vmin;
+        height: 8vmin;
+    }
+    div.play{
+        margin-top: 2%;
+    }
+    div.display{
+        width: 80px;
+        height: 35px;
+        border-radius: 10px;
+    } 
+    div.pause{
+        width: auto;
+        height: auto;
+        border-radius: 10px;
     }
     .content{
         margin: 0% 0% 5% 0%;
@@ -170,8 +228,24 @@ div.pause{
         flex-direction: column;
     }
     img{
-        max-width: 30px;
-        max-height: 30px;
+        width: 30px;
+        height: 30px;
+    }
+    .keys_full{
+        margin-top: 5%;
+    }
+    .keys_up{
+        width: auto;
+        height: auto ;
+    }
+    .flex{
+        width: auto;
+        height: auto;
+
+    }
+    .arrow > img, .keys_up > img{
+        width:30px ;
+        height: 30px;
     }
     
 }

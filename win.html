@@ -7,9 +7,16 @@
     <link rel="stylesheet" href="result_page.css">
 </head>
 <body>
+    <audio autoplay>
+        <source src="success-1-6297.mp3" type="audio/mpeg">
+    </audio>
+
     <div class="display">
-        <h1>Great Job!!!Gameover<img src="assets/Rating star gives a thumbs up.png" class="happy"></h1>
-        <img src="assets/restart.png" class="restart">
+        <h1>Great Job!!!<br>score:<span id="scoreVal"></span><img src="assets/Rating star gives a thumbs up.png" class="happy"></h1>
+        <img src="assets/restart.png" id="restart" onclick="redirectToGamePage()">
+        
     </div>
+    <!-- <button id="leaderBoard_win">leaderBoard</button>    -->
+    <script src="gameOver.js"></script>
 </body>
 </html>
