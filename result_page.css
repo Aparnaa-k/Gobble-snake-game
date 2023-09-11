@@ -78,16 +78,16 @@ span {
   height: 180px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 700px){
+
   body {
-    background-size: cover;
     width: 100%;
     height: 100%;
     margin: 0%;
-    background-size: cover;
+    background-size: auto;
   }
   h1 {
-    font-size: 30px;
+    font-size: 50px;
     height: auto;
     align-items: start;
   }
@@ -96,15 +96,15 @@ span {
   }
 
   #restart {
-    width: 10vmax;
-    height: 10vmax;
-    margin: 0% 0% 1% 20%;
+    width: 20vmax;
+    height: 20vmax;
+    margin: 0% 0% 1% 35%;
     align-items: center;
   }
   #restart_sad {
-    width: 10vmax;
-    height: 10vmax;
-    margin: 0% 0% 5% 20%;
+    width: 20vmax;
+    height: 20vmax;
+    margin: 0% 0% 1% 35%;
     align-items: center;
   }
   .sad {
