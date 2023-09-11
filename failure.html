@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="result_page.css">
-</head>
-<body>
+    <link rel="stylesheet" href="result_page.css" />
+  </head>
+  <body>
     <audio autoplay id="lost">
-        <source src="music/negative_beeps-6008.mp3" type="audio/mp3">
+      <source src="music/negative_beeps-6008.mp3" type="audio/mp3" />
     </audio>
     <div id="popup">
-        <h1>Oops!!!<br>
-            Score: <span id="scoreVal"></span><img src="assets/disappointed face.png" class="sad"></h1>
-            <img src="assets/restart.png" id="restart_sad" onclick="redirectToGamePage()">
-        
+      <h1>
+        Oops!!!<br />
+        Score: <span id="scoreVal"></span
+        ><img src="assets/disappointed face.png" class="sad" />
+      </h1>
+      <img
+        src="assets/restart.png"
+        id="restart_sad"
+        onclick="redirectToGamePage()"
+      />
     </div>
     <!-- <button id="leaderBoard_fail">leaderBoard</button> -->
     <script src="gameOver.js"></script>
-    
-</body>
+  </body>
 </html>

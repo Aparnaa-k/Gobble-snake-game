@@ -1,38 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
     <div class="main">
-        <h3 >GOBBLE SNAKE</h3>
-        <div class="popup">
-            <img src="assets/snake.png">
-            <div class="right">
-                <input placeholder=" USERNAME" id="username" type="text">
-                <input placeholder=" NICKNAME" id="nickname" type="text">
-                <button id="start">START GAME!</button>
-            </div>
+      <h3>GOBBLE SNAKE</h3>
+      <div class="popup">
+        <img src="assets/snake.png" />
+        <div class="right">
+          <input placeholder=" USERNAME" id="username" type="text" />
+          <input placeholder=" NICKNAME" id="nickname" type="text" />
+          <button id="start">START GAME!</button>
         </div>
+      </div>
     </div>
     <script>
-        document.getElementById("start").addEventListener("click", () => {
-                const username = document.getElementById("username").value;
-                const nickname = document.getElementById("nickname").value;
+      document.getElementById("start").addEventListener("click", () => {
+        const username = document.getElementById("username").value;
+        const nickname = document.getElementById("nickname").value;
 
-                if (!username || !nickname) {
-                    alert("Please fill in all the fields!");
-                    return;
-                }
+        if (!username || !nickname) {
+          alert("Please fill in all the fields!");
+          return;
+        }
 
-                localStorage.setItem("username", username);
-                localStorage.setItem("nickname", nickname);
-                window.location = 'instruction.html';
-            })
-       
+        localStorage.setItem("username", username);
+        localStorage.setItem("nickname", nickname);
+        window.location = "instruction.html";
+      });
     </script>
-</body>
+  </body>
 </html>

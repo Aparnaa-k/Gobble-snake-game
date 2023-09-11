@@ -1,8 +1,7 @@
-const scoreText = document.getElementById('scoreVal');
+const scoreText = document.getElementById("scoreVal");
 let points = localStorage.getItem("score");
-scoreText.innerText=points;
+scoreText.innerText = points;
 
-function redirectToGamePage(){
-    window.location = 'game_page.html'
+function redirectToGamePage() {
+  window.location = "game_page.html";
 }
-

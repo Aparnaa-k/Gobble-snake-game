@@ -1,22 +1,19 @@
-
-body{
-    background-image: url("assets/main.jpg");
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
-    margin: 0%;
-    padding: 0%;
-    background-size: cover;
+body {
+  background-image: url("assets/main.jpg");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  margin: 0%;
+  padding: 0%;
+  background-size: cover;
 }
 
-
-h1{
-    color: white;
-    font-size: 100px;
-    text-align: center;
-    width: 150vmin;
-    position: relative;
-    
+h1 {
+  color: white;
+  font-size: 100px;
+  text-align: center;
+  width: 150vmin;
+  position: relative;
 }
 /* #leaderBoard_win{
     width: 200px;
@@ -45,76 +42,72 @@ h1{
     cursor: pointer;
     border: none;
 } */
-span{
-    margin-top: -50px;
+span {
+  margin-top: -50px;
 }
 
-.sad{
-    margin: -80px 25px;
-    width: 400px;
-    height: 400px;
-    position:absolute;
+.sad {
+  margin: -80px 25px;
+  width: 400px;
+  height: 400px;
+  position: absolute;
 }
 
-.happy{
-    position: absolute;
-    width: 400px;
-    height: 400px;
-    margin: 10px 50px 0px 20px;
-
+.happy {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  margin: 10px 50px 0px 20px;
 }
 
-#restart{
-    padding-left: 30%;
-    cursor: pointer;
-    position: absolute;
-    margin-top: -65px;
-    width: 180px;
-    height: 180px;
-
+#restart {
+  padding-left: 30%;
+  cursor: pointer;
+  position: absolute;
+  margin-top: -65px;
+  width: 180px;
+  height: 180px;
 }
 
-#restart_sad{
-    padding-left: 30%;
-    cursor: pointer;
-    position: absolute;
-    margin-top:-65px;
-    width: 180px;
-    height: 180px;
+#restart_sad {
+  padding-left: 30%;
+  cursor: pointer;
+  position: absolute;
+  margin-top: -65px;
+  width: 180px;
+  height: 180px;
 }
 
-@media (max-width:700px){
-    body{
-        background-size: cover;
-        width: 100%;
-        height: 100%;
-        margin: 0%;
-        background-size: cover;
-    }
-    h1 {
-        font-size:30px;
-        height: auto;
-        align-items: start;
-    }
-    .happy{
-        display: none;
-        
-    }
-    
-    #restart{
-        width: 10vmax;
-        height: 10vmax;
-        margin: 0% 0% 1% 20%;
-        align-items: center;
-    }
-    #restart_sad{
-        width: 10vmax;
-        height: 10vmax;
-        margin: 0% 0% 5% 20%;
-        align-items: center;
-        
-    }
-    .sad{
-        display: none;
-    }
+@media (max-width: 700px) {
+  body {
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+    background-size: cover;
+  }
+  h1 {
+    font-size: 30px;
+    height: auto;
+    align-items: start;
+  }
+  .happy {
+    display: none;
+  }
+
+  #restart {
+    width: 10vmax;
+    height: 10vmax;
+    margin: 0% 0% 1% 20%;
+    align-items: center;
+  }
+  #restart_sad {
+    width: 10vmax;
+    height: 10vmax;
+    margin: 0% 0% 5% 20%;
+    align-items: center;
+  }
+  .sad {
+    display: none;
+  }
 }
